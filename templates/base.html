@@ -1,0 +1,41 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+{% include "snippet/head.html" %}
+
+<body id="body">
+
+  <!--==========================
+    Top Bar
+  ============================-->
+  {% include "snippet/top-bar.html" %}
+
+  <!--==========================
+    Header
+  ============================-->
+  {% include "snippet/header.html" %}
+ 
+
+  <!--==========================
+    Intro Section
+  ============================-->
+  {% include "snippet/intro.html" %}
+
+
+  <main id="main">
+  {% block content %}
+  
+  {% endblock %}
+  </main>
+
+
+  <!--==========================
+    Footer
+  ============================-->
+ {% include "snippet/footer.html" %}
+
+ {% include "snippet/script.html" %}
+
+</body>
+</html>
